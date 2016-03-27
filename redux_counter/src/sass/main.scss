@@ -1,0 +1,45 @@
+@import 'compass';
+@import 'common/all';
+@import 'common/mixin';
+$borderColor2:#248fe7;
+.content-menu {
+    padding: 0;
+    height: 100%;
+    border-right:2px solid $borderColor2;
+    max-width:270px;
+}
+
+.content-menu-list {
+    .content-menu-itm {
+        width: 100%;
+        border-bottom: 1px solid $borderColor2;
+        padding: 0 10px;
+        &:last-child {
+            border-bottom: none;
+        }
+        .content-menu-itm {
+        	border-color:$borderColor;
+        }
+    }
+}
+
+.content-menu-link {
+	display: block;
+    color: $baseColor;
+    cursor: pointer;
+    padding: 10px;
+    position:relative;
+    .caret{
+    	position: absolute;
+    	top:20px;
+    	right:10px;
+    }
+}
+
+.top-header {
+    border-bottom: 2px solid $borderColor2;
+    padding: 30px;
+    h3 {
+        margin-top: 0;
+    }
+}
