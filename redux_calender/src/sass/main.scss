@@ -1,0 +1,37 @@
+@import 'compass';
+@import 'common/all';
+@import 'common/mixin';
+$borderColor2:#248fe7;
+.calander-header{
+    padding:10px;
+    text-align: center;
+    background-color: $borderColor;
+    .form-control{
+        margin:0 10px;
+    }
+    .glyphicon{
+        position: relative;
+        font-size: 20px;
+        top: 5px;
+    }
+}
+.calander-wrap{
+    width:100%;
+    th{
+            border-bottom:1px solid $borderColor;
+        }
+    .calander-cell{
+        padding: 10px;
+        text-align: center;
+        
+        &.calander-cell-other{
+            color:$borderColor;
+        }
+        &.calander-cell-now{
+            background-color:$borderColor;
+            color: $borderColor2
+        }
+    }
+
+}
+

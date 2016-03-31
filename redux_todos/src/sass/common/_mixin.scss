@@ -1,0 +1,26 @@
+$borderColor:#ededed;
+$bgColor:#fefefe;
+$baseColor:#333;
+$lFontSize:20px;
+@mixin txt-hide{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@mixin clamp($num:2){//use:@include clamp(3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $num;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+@mixin clearfix{
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
